@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>inactive</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#CFDFE6" offset="0%"></stop>
+            <stop stop-color="#B8B8E6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Views" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="New-Project-v1.1a" sketch:type="MSArtboardGroup" transform="translate(-792.000000, -33.000000)" fill="url(#linearGradient-1)">
+            <g id="main-nav:-main-nav-logged-in-v3" sketch:type="MSLayerGroup">
+                <g id="avatar-+-new-+-notify" transform="translate(656.000000, 33.000000)" sketch:type="MSShapeGroup">
+                    <g id="new:-button-notifications" transform="translate(136.000000, 0.000000)">
+                        <g id="inactive">
+                            <path d="M16.0004945,17.9993086 L16.0004945,23.5623086 C16.0004945,24.1153086 16.1804945,24.1463086 16.4014945,23.6343086 L19.9284945,14.9283086 C20.1494945,14.4153086 19.8454945,13.9993086 19.2474945,13.9993086 L16.0004945,13.9993086 L16.0004945,8.43630859 C16.0004945,7.88330859 15.8204945,7.85230859 15.5984945,8.36430859 L12.0724945,17.0703086 C11.8504945,17.5833086 12.1554945,17.9993086 12.7534945,17.9993086 L16.0004945,17.9993086 Z" id="bolt"></path>
+                            <path d="M32,16 C32,7.16344357 24.8365564,0 16,0 C7.16344357,0 0,7.16344357 0,16 C0,24.8365564 7.16344357,32 16,32 C24.8365564,32 32,24.8365564 32,16 Z M1,16 C1,7.71572832 7.71572832,1 16,1 C24.2842717,1 31,7.71572832 31,16 C31,24.2842717 24.2842717,31 16,31 C7.71572832,31 1,24.2842717 1,16 Z" id="notify-base"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

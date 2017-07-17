@@ -1,0 +1,68 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  border-top: 1px solid darken($base-border-color, 5);
+  background: $warm-gray;
+  @include media($small) {
+    height: 12em;
+  }
+  .inner {
+    @extend %container;
+    padding: 2em 0;
+    .logo {
+      @include span-columns(1);
+      @include media($small) {
+        display: none;
+      }
+    }
+    .links {
+      @include span-columns(4.404);
+      height: em(32);
+      @include media($small) {
+        @include span-columns(2.5);
+        @include shift(.5);
+      }
+      a {
+        @extend %vertical-align;
+        @include link-hover($darker-gray, 10, shadow);
+        display: inline-block;
+        margin-right: em(24, 16);
+        font-size: $fs5;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        @include media($small) {
+          font-size: $fs5;
+          margin-right: 0;
+          display: block;
+        } 
+      }
+      &.right {
+        text-align: right;
+        margin-right: 0;
+        float: right;
+        @include media($small) {
+          float: left;
+          text-align: left;
+          @include omega();
+        }
+      }
+    }
+    small {
+      @include span-columns(10);
+      text-align: center;
+      margin-top: 2em;
+      color: $medium-gray;
+      a {
+        @include link-hover(darken($medium-gray, 5), 20, shadow);
+      }
+      @include media($small) {
+        position: absolute;
+        bottom: 8px;
+      }
+    }
+  }
+}

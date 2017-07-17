@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="32px" viewBox="0 0 25 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>meeet.co 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Views" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Sign-Up-v1.1a" sketch:type="MSArtboardGroup" transform="translate(-88.000000, -881.000000)" fill="#D7D7D7">
+            <g id="footer:-footer" sketch:type="MSLayerGroup" transform="translate(0.000000, 849.000000)">
+                <g id="logo:-logo-grey-small" transform="translate(88.000000, 32.000000)" sketch:type="MSShapeGroup">
+                    <path d="M0,32 L2.05479452,32 L2.05479452,10.9742033 C2.05479452,8.35204856 1.90802348,5.00151745 1.81017613,2.33080425 L2.00587084,2.33080425 L4.54990215,9.37177542 L11.4970646,28.5037936 L13.4540117,28.5037936 L20.4011742,9.37177542 L22.8962818,2.33080425 L23.0919765,2.33080425 C22.9452055,5.00151745 22.7984344,8.35204856 22.7984344,10.9742033 L22.7984344,32 L25,32 L25,0 L21.8199609,0 L15.1174168,18.7921093 L12.6223092,25.8816388 L12.4266145,25.8816388 L9.88258317,18.7921093 L3.13111546,0 L0,0 L0,32 Z" id="M"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

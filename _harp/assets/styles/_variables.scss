@@ -1,0 +1,75 @@
+// variables
+/////////////////////////////////////////
+
+// type
+$sans-serif: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif;
+$head: $sans-serif;
+$body: $sans-serif;
+$header-font-family: $sans-serif;
+$base-font-family: $sans-serif;
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.5;
+
+// type scale
+$fs1: 36px;
+$fs2: 24px;
+$fsCopy: 20px;
+$fs3: 18px;
+$fs4: 16px;
+$fs5: 14px;
+$fs6: 12px;
+$fs7: 10px;
+
+// cool
+$blue:  #66b5f3;
+$dark-blue: #4E596B;
+$green: rgba(101, 224, 92, 1.0);
+
+// Warm
+$red: #D27873;
+
+// white
+$white: #ffffff;
+
+// grays
+$off-white: #FCFCFC;
+$light-gray: #e8e8e8;
+$medium-gray: darken(#c1c1c1, 5%);
+$darker-gray: rgba(0,0,0,.4);
+$warm-gray: #efefef;
+
+// blue grays
+$blue-gray: #74808a;
+$light-blue-gray: desaturate(#91a1ad, 5%);
+
+// blacks
+$light-black: #4E596B;
+
+// body color
+$base-body-color: $off-white;
+
+// font colors
+$base-font-color: #393C42;
+$base-accent-color: $blue;
+$base-error-color: $red;
+
+// link colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 10);
+
+// border color
+$base-border-color: $light-gray;
+
+// border-radius
+$base-border-radius: 3px;
+
+// box-shadow
+$base-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.02);
+
+// top tier
+$top-tier: 9999;
+$mid-tier: 2;
+$base-tier: 1;
+
+// stripes!
+$striping: $blue, $white, $white, $white, $blue, $white, $white, $white, $blue, $white, $white, $white, $blue, $white, $white, $white, $blue, $white, $white, $white, $blue, $white, $white, $white, $blue, $white, $white, $white, $blue, $white, $white, $white;

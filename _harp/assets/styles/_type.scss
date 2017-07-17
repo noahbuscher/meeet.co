@@ -1,0 +1,209 @@
+// typography
+/////////////////////////////////////////
+
+body {
+	color: $base-font-color;
+	font-family: $head;
+	font-size: $base-font-size;
+	-webkit-font-smoothing: antialiased;
+	line-height: $base-line-height;
+  margin-bottom: 9.6em; // footer height
+  min-height: 100%;
+  height: 100%;
+  @include media($small) {
+  	margin-bottom: 12em;
+  }
+}
+
+h1,.h1 ,%h1, h2, .h2,%h2, h3, .h3,%h3, h4, h5, h6 {
+	font-family: $header-font-family;
+	line-height: 1.25em;
+	margin: 0;
+	text-rendering: optimizeLegibility; //fix the character spacing for headings
+}
+
+h5,h6 {
+	font-family: $base-font-family;
+}
+
+h1,.h1,%h1 {
+	font-size: $fs1; // 16 * 2 = 36px
+	line-height: em(40px, $fs1);
+	margin-bottom: .42em;
+	font-weight: normal;
+}
+
+h2,.h2,%h2 {
+	font-size: $fs2; // 16 * 1.75 = 24px
+	line-height: 1.16em;
+	margin-bottom: .36em;
+	font-weight: normal;
+}
+
+h3,.h3,%h3 {
+	font-size: $fs3; // 20 * 1.125 = 18px
+	line-height: 1.25em;
+	margin-bottom: .35em;
+  font-weight: 400;
+}
+
+h4,.h4,%h4 {
+	font-size: $fs7;
+	@extend %caps-lock;
+	font-weight: 600;
+	line-height: 1.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+}
+
+p {
+	// margin: 0 0 ($base-line-height * .5);
+	color: $darker-gray;
+	/* Non standard for webkit */
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+p + p {
+  margin-top: $base-line-height;
+}
+p a {
+  color: $base-link-color;
+  &:hover {
+    color: darken($base-link-color, 10)
+  }
+}
+
+p.caption {
+	text-align: center;
+	color: $darker-gray;
+	width: 100%;
+	font-size: $fs6;
+  margin-bottom: .75em;
+  line-height: 1.25em;
+}
+
+hr {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 2px;
+	border: none;
+	background: $light-gray;
+	margin: ($base-line-height - 1) auto;
+}
+
+img {
+	margin: 0;
+	max-width: 100%;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $base-border-color;
+	cursor: help;
+}
+
+address {
+	display: block;
+	margin: 0 0 ($base-line-height / 2);
+}
+
+del {
+	color: transparentize($base-font-color, .33);
+}
+
+blockquote {
+	font-style: italic;
+	margin: $base-line-height 0;
+	margin-left: $base-line-height;
+	padding-left: $base-line-height;
+}
+
+small {
+	font-size: $fs5;
+	display: block;
+}
+
+em {
+	font-style: italic;
+}
+
+b {
+	font-weight: 600;
+	letter-spacing: -0.04em;
+}
+
+cite {
+	color: lighten($base-font-color, 25);
+	font-style: italic;
+
+	&:before {
+		content: '\2014 \00A0';
+	}
+}
+
+// copy
+%intro {  font-size: $fs3; }
+%copy {   font-size: $fs4; }
+
+
+// casing
+%caps-lock  { text-transform:uppercase; }
+%title-casing { text-transform:capitalize; }
+
+// tracking on titles
+%title      {
+	letter-spacing:0.08em;
+	text-transform:uppercase;
+}
+
+// alignment
+%ar         { text-align: right;  }
+%al         { text-align: left;   }
+%ac,
+%ct         { text-align: center; }
+
+
+
+// wrapping
+%nw    { white-space:nowrap; }
+
+
+
+// leading
+%lh-1       { line-height:1; }
+%lh-2       { line-height:2; }
+%lh-title   { line-height:1.3; }
+%lh-copy    { line-height:1.6; }
+
+// p + p {
+//   margin-top: $line-height;
+// }
+
+// article {
+//   p ~ h2, p~.h2, p ~ h3,.h3, p ~ h4, p ~ h5 {
+//     margin-top: $line-height;
+//   }
+// }
+  
+// article headers
+.post {
+  article {
+		&:first-child {
+			margin-top: 0;
+	  }
+		h1,.h1,h2,.h2,h3,.h3,,h4 {
+  		font-weight: normal;
+  		margin-top: 1.5rem;
+  		font-style: italic;      
+		}
+		h5,.h5,h6,.h6 {
+			@extend %caps-lock;
+			font-style: normal;
+			font-weight: 600;
+			margin-top: 1.5rem;
+			letter-spacing: 0.1em;
+		}
+  }
+}

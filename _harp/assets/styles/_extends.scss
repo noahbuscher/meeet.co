@@ -1,0 +1,51 @@
+// extends
+/////////////////////////////////////////
+
+// ligatures, usually for titles
+%liga {
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+
+// vertical alignment, must be on a child element
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// float right
+.right {
+  float: right;
+}
+
+%full {
+  width: 100%;
+  display: block;
+}
+
+// containing element to ensure at max-width that nothing is right at the edge
+%container {
+  @include outer-container();
+  margin: 0 auto;
+  @include media($default) {
+    padding: 0 1em; 
+  }
+}
+
+// that bordered style
+%bordered {
+  background: $white;
+  border: 1px solid $base-border-color;
+  @include border-top-radius($base-border-radius);
+  @include border-bottom-radius($base-border-radius);
+  padding: 1em;
+  // subtle drop shadow
+  -moz-box-shadow: $base-box-shadow;
+  box-shadow: $base-box-shadow;
+}

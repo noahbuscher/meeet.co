@@ -1,0 +1,34 @@
+.center {
+  @include span-columns(5);
+  @include shift(2.5);
+  @include clearfix;
+}
+
+.notify {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: $fs5;
+  font-weight: 300;
+  letter-spacing: .02em;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  &.notify-success {
+    background: $green;
+    color: $base-body-color;
+  }
+  &.notify-oops {
+    background: $red;
+    color: $base-body-color;
+  }
+}
+
+.list-feed + aside {
+  margin-top: 2rem;
+}
+
+// grid 
+.full-col {
+  @include span-columns(10);
+}

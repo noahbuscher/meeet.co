@@ -1,0 +1,292 @@
+section {
+	img {
+	// 	width: 960px !important;
+	// 	display: block;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	}
+}
+
+.container {
+	@extend %container;
+}
+
+.block-1 {
+	@extend %container;
+	min-height: 15rem;
+	padding: 4em 0;
+	h2 {
+		font-weight: 400;
+		color: $medium-gray;
+		@include media($small) {
+			font-size: $fs2;
+		}
+	}
+	p {
+		font-size: $fsCopy;
+		// @extend %vertical-align;
+		line-height: em(32, 20);
+		font-weight: 400;
+		color: $light-black;
+		@include media($small) {
+			font-size: $base-font-size;
+			line-height: $base-line-height;
+		}
+	}
+	.banner {
+		height: 10rem;
+		display: block;
+	}
+	.fourth {
+		@extend %vertical-align;
+		.tnw {
+			max-width: 12em;
+			position: relative;
+			top: .5rem;
+		}
+		.bl {
+			top: .5rem;
+		}
+		img {
+			position: relative;
+			margin: 0 auto;
+			display: block;
+			height: auto;
+			width: 100%;
+			max-width: 6em;
+			opacity: .33;
+			margin-top: $base-line-height;
+			// background: $blue;
+		}
+		@include span-columns(2.5 of 10);
+		@include omega(4n);
+
+		@include media($default) {
+			@include span-columns(5 of 10);
+			@include omega(2n);
+			margin-bottom: $base-line-height;
+		}
+		@include media($small) {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: $base-line-height;
+			float: none;
+			width: 100%;
+		}
+	}
+}
+
+.block-2 {
+	@extend %full;
+	height: 120vh;
+	max-height: 72rem;
+	@include background(linear-gradient(60deg, rgba(71, 81, 97, .8) 0%, rgba(72, 87, 112, .8) 100%), linear-gradient(60deg, rgba(142, 117, 230, .5) 0%, rgba(126, 211, 251, .5) 100%));
+	background-blend-mode: multiply;
+	padding-top: 4em;
+	color: $white;
+	overflow: hidden;
+	img {
+		border: 1px solid $base-border-color;
+	}
+	@include media($small) {
+		height: 88vh;
+		max-height: 28rem;
+	}
+	h2 {
+		@extend %h1;
+		font-weight: 300;
+		@include media($small) {
+			font-size: $fs2;
+		}
+	}
+	p {
+		font-size: $fs3;
+		line-height: em(26, 18);
+		color: #C1CAD9;
+		@include span-columns(6);
+		@include media($small) {
+			@include span-columns(6);
+			font-size: $base-font-size;
+			line-height: $base-line-height;
+		}
+	}
+	img {
+		margin-top: 4em;
+		width: 100%;
+		height: auto;
+		@include border-top-radius($base-border-radius);
+		@include border-bottom-radius($base-border-radius);
+		box-shadow: -1px 1px 3px 0 rgba(0,0,0,.02);
+		@include transition-property (transform);
+		@include transition-duration(.6s);
+		@include transition-timing-function(ease-in-out-quad);
+		&:hover {
+			@include transform(translateY(-2rem));
+			@include transition-property (transform);
+			@include transition-duration(.2s);
+			@include transition-timing-function(ease-in-in-out-quad);
+		}
+	}
+}
+
+.block-3 {
+	@extend .block-2;
+	background: $white;
+	color: $light-black;
+	h2 {
+		width: 360px;
+		color: $white;
+		@include linear-gradient(-224deg, darken(#7ED3FB, 10) 0%, darken(#8E75E6,10) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: 40px;
+	}
+	// FF support
+	.backgroundclip h2 {
+		@include linear-gradient(-224deg, darken(#7ED3FB, 10) 0%, darken(#8E75E6,10) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	p {
+		color: $light-black
+	}
+}
+
+.block-4 {
+	@extend .block-2;
+}
+
+.block-5 {
+	padding: $base-line-height*2;
+	min-height: 15rem;
+	border-bottom: 1px solid $base-border-color;
+	border-top: 1px solid $base-border-color;
+	p {
+		color: $light-black;
+		clear: both;
+		display: block;
+		@include span-columns(10);
+	}
+	h2 {
+		color: $light-black;
+		@extend %h1;
+		font-weight: 300;
+		@include media($small) {
+			font-size: $fs2;
+		}
+	}
+	.holster {
+		margin-top: $base-line-height;
+		@include span-columns(10);
+		@include clearfix;
+	}
+	.third {
+		@include span-columns(3.33 of 10);
+		@include omega(3n);
+		@include media($default) {
+			@include span-columns(5 of 10);
+			@include omega(2n);
+			margin-bottom: $base-line-height;
+		}
+		@include media($small) {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: $base-line-height;
+			float: none;
+			width: 100%;
+		}
+		h3 {
+			font-weight: 600;
+		}
+		li {
+			color: $light-black;
+			list-style: disc;
+			margin-left: .5em;
+		}
+	}
+}
+
+.featured {
+	@include span-columns(3);
+	@include omega(3n);
+	height: auto;
+}
+
+.block-6 {
+	padding: 4em 0;
+	background: $white;
+	h2 {
+		color: $light-black;
+		@extend %h1;
+		font-weight: 300;
+		@include media($small) {
+			font-size: $fs2;
+		}
+	}
+	aside.three-col {
+		margin-top: 2rem;
+		@include span-columns(4);
+		p {
+			color: $light-black;
+		}
+		padding-right: 4rem;
+		border-right: 1px solid $base-border-color;
+		@include media($default) {
+			display: block;
+			width: 100%;
+			border-right: none;
+			padding-right: 0;
+		}
+	}
+	aside.five-col {
+		margin-top: 2rem;
+		@include span-columns(5);
+		@include shift(.5);
+		@include media($small) {
+			@include span-columns(6);
+			@include shift(0);
+		}
+	}
+	form {
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+	input[type="email"] {
+		height: 3rem;
+		width: 100%;
+		font-size: $base-font-size;
+		font-weight: 300;
+		-webkit-font-smoothing: antialiased;
+		&:active, &:focus {
+			font-weight: 300;
+		}
+	}
+	button {
+		@include button-default($base-accent-color, 3px, 48px, solid);
+		width: em(196, 16);
+		max-height: 48px;
+		font-size: $base-font-size;
+		margin-top: 2rem;
+		@include media($small) {
+			margin-top: 2rem;
+		}
+	}
+}
+
+// mailchimp
+.mc-response {
+	display: block;
+	width: 100%;
+	clear: both;
+	@include clearfix();
+	margin-bottom: $base-line-height/2;
+}
+.mc-error .mc-response {
+	@extend .notify;
+	@extend .notify-oops;
+}
+.mc-success .mc-response {
+	@extend .notify;
+	@extend .notify-success;
+}
